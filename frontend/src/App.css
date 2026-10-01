@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #1f2937;
+}
+
+.app {
+    min-height: 100vh;
+}
+
+.header {
+    background: #111827;
+    color: white;
+    padding: 30px 40px;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #9ca3af;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card span {
+    display: block;
+    color: #6b7280;
+    margin-bottom: 10px;
+}
+
+.stat-card strong {
+    font-size: 32px;
+}
+
+.form-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.form-section input,
+.form-section textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+}
+
+.form-section textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-top: 8px;
+}
+
+.form-section button {
+    background: #2563eb;
+    color: white;
+}
+
+.chamados-section h2 {
+    margin-bottom: 20px;
+}
+
+.chamados-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.chamados-grid > div {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.chamados-grid h3 {
+    margin-bottom: 12px;
+}
+
+.chamados-grid p {
+    margin-bottom: 10px;
+    color: #4b5563;
+}
+
+.chamado-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.chamado-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.chamado-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.chamado-topo > span:first-child {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.status.aberto {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.status.em-andamento {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.status.resolvido {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.acoes {
+    margin-top: 15px;
+}
+
+.btn-andamento {
+    background: #2563eb;
+    color: white;
+}
+
+.btn-resolver {
+    background: #16a34a;
+    color: white;
+}
+
+.btn-excluir {
+    background: #dc2626;
+    color: white;
+}
+
+.acoes button:hover {
+    opacity: 0.85;
+}
+
+.mensagem {
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.mensagem.erro {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.mensagem.sucesso {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.chamados-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.filtros {
+    display: flex;
+    gap: 10px;
+}
+
+.filtros input,
+.filtros select {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: white;
+    font-size: 14px;
+}
+
+.filtros input {
+    width: 220px;
+}
+
+.filtros select {
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .chamados-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filtros {
+        flex-direction: column;
+    }
+
+    .filtros input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .chamados-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        padding: 25px 20px;
+    }
+}
