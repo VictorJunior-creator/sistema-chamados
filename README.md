@@ -4,7 +4,7 @@ Sistema web full stack desenvolvido como **projeto de aprendizado e prática** d
 
 O projeto tem como objetivo praticar conceitos básicos de frontend, backend, API REST, banco de dados e integração entre diferentes camadas de uma aplicação.
 
-** Atenção:** este projeto **não está finalizado e não deve ser considerado um sistema pronto para produção**. Algumas funcionalidades ainda estão em desenvolvimento, existem limitações, possíveis bugs e partes que precisam ser aprimoradas.
+**Atenção:** este projeto **não está finalizado e não deve ser considerado um sistema pronto para produção**. Algumas funcionalidades ainda estão em desenvolvimento, existem limitações, possíveis bugs e partes que precisam ser aprimoradas.
 
 ## Tecnologias
 
